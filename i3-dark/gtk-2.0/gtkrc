@@ -1,3 +1,5 @@
+#i3-dark
+
 style "default"
 {
     GtkButton::default_border                    = {0, 0, 0, 0}
@@ -33,6 +35,9 @@ style "default"
     GtkEntry::cursor_aspect_ratio                = 0.1
     GtkEntry::cursor_aspect_ratio                = 0.1
     
+  GtkWidget::tooltip-radius = 2
+  GtkWidget::tooltip-alpha = 235
+
     xthickness             = 1
     ythickness             = 1
 

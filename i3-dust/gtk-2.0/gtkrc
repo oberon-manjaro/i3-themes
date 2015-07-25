@@ -1,3 +1,5 @@
+#i3-dust
+
 style "default"
 {
     GtkButton::default_border                    = {0, 0, 0, 0}
@@ -64,16 +66,19 @@ style "default"
     text[PRELIGHT]    = "#ffffff"
     text[SELECTED]    = "#ffffff"
 
-    engine "xfce" {
+   engine "xfce" 
+   {
 	smooth_edge = true
-       boxfill {
-           fill_style = plain
-       }
+	boxfill
+	{
+          fill_style = plain
+      }
    }
 }
 widget_class "*"                   style "default"
 include "thunar.rc"
-style "menustyle" = "default" {
+style "menustyle" = "default"
+{
     xthickness = 2
     ythickness = 2
 #    bg[NORMAL] = "#3d3d3d"
@@ -85,7 +90,7 @@ class "*ToolBar"                   style "menustyle"
 widget_class "*MenuBar"            style "menustyle"
 class "*MenuBar"                   style "menustyle"
 
-style "tooltips" {
+ style "tooltips" {
   xthickness = 8
   ythickness = 4
   
@@ -98,13 +103,14 @@ style "tooltips" {
 # GTK tooltips
 widget "gtk-tooltip*"                                               style "tooltips"
 
-style "button" = "default" {
+style "button" = "default"
+{
     xthickness = 2
     ythickness = 2
     bg[ACTIVE] = "#215050"
     fg[ACTIVE] = "#ffffff"
     fg[SELECTED] = "#ffffff"
-   engine "xfce" {
+    engine "xfce" {
         smooth_edge = true
         grip_style = none
         boxfill {
@@ -142,7 +148,7 @@ style "sbstyle" = "default" {
     ythickness = 2
     bg[NORMAL] = "#103030"
     bg[PRELIGHT] = "#316060"
-   engine "xfce" {
+    engine "xfce" {
        smooth_edge = true
        grip_style = none
        boxfill {
